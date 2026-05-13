@@ -18,7 +18,7 @@ ENV NODE_ENV=production
 WORKDIR /app
 
 RUN apt-get update \
-  && apt-get install -y --no-install-recommends ca-certificates tini \
+  && apt-get install -y --no-install-recommends ca-certificates ffmpeg tini \
   && rm -rf /var/lib/apt/lists/*
 
 COPY package*.json ./
